@@ -22,7 +22,7 @@ def new_transaction():
 
 
 @transactions_blueprint.route("/transactions",  methods=['POST'])
-def create_task():
+def create_transaction():
     merchant_id = request.form['merchant_id']
     tag_id = request.form['tag_id']
     amount = request.form['amount']

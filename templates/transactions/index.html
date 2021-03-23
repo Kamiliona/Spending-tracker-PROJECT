@@ -13,6 +13,11 @@
   <p>{{ transaction.merchant.name }}</p>
   <p>{{ transaction.tag.name }}</p>
   </li>
+  <p>
+    <form action="/transactions/{{ transaction.id }}/delete" method="POST">
+      <input class="btn btn--danger" type="submit" value="delete" />
+    </form>
+  </p>
 
   {% endfor %}
 </ul>
