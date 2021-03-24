@@ -11,6 +11,12 @@ transaction_repository.delete_all()
 merchant_repository.delete_all()
 tag_repository.delete_all()
 
+# create a tag named UNTAGGED
+# save it to the db
+
+# create a merchant named NO MERCHANT
+# save it to database
+
 merchant1 = Merchant("Amazon")
 merchant_repository.save(merchant1)
 

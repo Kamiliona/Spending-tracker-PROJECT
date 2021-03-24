@@ -5,6 +5,12 @@
 
 <a href="/transactions/new">New transaction</a>
 
+<!-- <ul>  
+{% for amount in amounts %}
+<p>{{ transaction.amount }}</p>
+{% endfor %}
+</ul> -->
+
 <ul>
   {% for transaction in transactions %}
 
@@ -13,11 +19,7 @@
   <p>{{ transaction.merchant.name }}</p>
   <p>{{ transaction.tag.name }}</p>
   </li>
-  <p>
-    <form action="/transactions/{{ transaction.id }}/delete" method="POST">
-      <input class="btn btn--danger" type="submit" value="delete" />
-    </form>
-  </p>
+  
 
   {% endfor %}
 </ul>

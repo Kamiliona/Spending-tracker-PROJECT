@@ -13,6 +13,7 @@ def transactions():
     transactions = transaction_repository.select_all()
     return render_template("transactions/index.html", transactions = transactions)
 
+# transaction_repository.select_all() loop through add up amounts
 
 @transactions_blueprint.route("/transactions/new", methods=['GET'])
 def new_transaction():

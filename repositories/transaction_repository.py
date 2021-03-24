@@ -32,7 +32,7 @@ def merchant(transaction):
     merchant = Merchant(results['name'], results['id'])
     return merchant
 
-def tag(visit):
+def tag(transaction):
     sql = "SELECT * FROM tags WHERE id = %s"
     values = [transaction.tag.id]
     results = run_sql(sql, values)[0]
