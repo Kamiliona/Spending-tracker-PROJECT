@@ -50,5 +50,12 @@ def delete(id):
     values = [id]
     run_sql(sql, values)
 
+def total_expenditure():
+    sql = "SELECT sum(amount) FROM transactions"
+    result = run_sql(sql)
+    return result[0]["sum"]
 
+    # cause it is a dic - acces key sum
+    # first 0 cause its a list
+    
 

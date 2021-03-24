@@ -11,7 +11,8 @@ transactions_blueprint = Blueprint("transactions", __name__)
 @transactions_blueprint.route("/transactions")
 def transactions():
     transactions = transaction_repository.select_all()
-    return render_template("transactions/index.html", transactions = transactions)
+    total_amount = transaction_repository.total_expenditure()
+    return render_template("transactions/index.html", transactions = transactions, total_amount = total_amount)
 
 # transaction_repository.select_all() loop through add up amounts
 
