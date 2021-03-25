@@ -1,0 +1,75 @@
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Gill Sans Extrabold", sans-serif;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+
+  h3 {
+    margin-left: 140px;
+    font-weight: 100;
+
+  }
+  
+  a, a:link, a:visited {
+    color: #0094C6;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: #8EE3EF;
+  }
+  
+add {
+
+    padding: 20px;
+
+
+
+}
+
+  nav {
+
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 25px;
+  }
+  
+  nav ul li {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    
+  }
+
+
+  
+  ul {
+    margin-left: 0px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+  
+  main {
+    padding: 25px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex--row {
+    flex-direction: row;
+  }
+  
+  #content {
+    border-left: 1px solid #254E70;
+    padding-left: 25px;
+  }
+  

@@ -1,24 +1,29 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Transactions</h1>
 
-<a href="/transactions/new">New transaction</a>
+<h1> {{total_amount}} £ </h1>
+<h3> Total spent </h3>
 
-<p>Total spent: {{total_amount}} </p>
 
+<a class= href="/transactions/new">New transaction</a>
+
+
+
+<table>
 <ul>
   {% for transaction in transactions %}
 
   <li>
   <p>{{ transaction.amount }}</p>
+  </li>
   <p>{{ transaction.merchant.name }}</p>
   <p>{{ transaction.tag.name }}</p>
   </li>
   
-
   {% endfor %}
 </ul>
+</table>
 
 
 {% endblock %}

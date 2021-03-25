@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Tags</h1>
 
+<p>
     <a href="/tags/new">New tag</a>
+</p>
 
+<table>
 <ul>
     {% for tag in tags %}
     <li>{{tag.name}}</li>
@@ -15,5 +17,6 @@
       </p>
     {% endfor %}
 </ul>
+</table>
 
 {% endblock %}
